@@ -13,7 +13,7 @@ class MimeCleaner implements IMimeCleaner
      */
     public function clean($typeMime)
     {
-        if( preg_match("/([a-z\\/\\.]*)(;.*)?/", $typeMime, $matches) ){
+        if( preg_match("/([a-zA-Z0-9-\\/\\.]*)(; .*)?/", $typeMime, $matches) ){
             return $matches[1];
         }
         return $typeMime;

@@ -1,23 +1,22 @@
 <?php
-/**
- * @author Stéphane Bouvry<stephane.bouvry@unicaen.fr>
- * @date: 04/12/15 13:28
- * @copyright Certic (c) 2015
- */
-
 namespace Jacksay\PhpFileExtension\Dictonary;
 
 
 use Jacksay\PhpFileExtension\PhpFileExtension;
 
+/**
+ * Commons extensions used for office document (from Word, Exel, Openoffice,
+ * etc.)
+ *
+ * Class OfficeDocumentDictonary
+ * @package Jacksay\PhpFileExtension\Dictonary
+ */
 class OfficeDocumentDictonary implements IDictonary
 {
 
     public function loadExtensions(PhpFileExtension $manager)
     {
         $manager
-            ->addExtension('application/vnd.openxmlformats-officedocument.wordprocessingml.document',['docx', 'dotx'])
-
             ->addExtension('application/vnd.ms-word.document.macroEnabled.12t','docm')
             ->addExtension('application/vnd.openxmlformats-officedocument.wordprocessingml.template','dotx')
 
