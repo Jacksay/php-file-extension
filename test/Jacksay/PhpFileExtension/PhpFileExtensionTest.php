@@ -1,5 +1,8 @@
 <?php
 
+namespace Jacksay\PhpFileExtension;
+use Jacksay\Dictonary\DocumentDictionary;
+
 /**
  * Created by PhpStorm.
  * User: jacksay
@@ -10,10 +13,11 @@ class PhpFileExtensionTest extends \PHPUnit_Framework_TestCase
 {
     public function testExtensionAdd()
     {
-        $ext = new \Jacksay\PhpFileExtension\PhpFileExtension();
+        $ext = new PhpFileExtension();
 
-        $ext->addExtension('image/jpg', 'jpg');
-        $ext->addExtension('image/jpeg', 'jpg');
+        // Image
+        $loader = new DocumentDictionary();
+        $loader->loadExtensions($ext);
 
         $this->assertEquals($ext->getExtension('image/jpg'), 'jpg');
         $this->assertEquals($ext->getExtension('image/jpeg'), 'jpg');

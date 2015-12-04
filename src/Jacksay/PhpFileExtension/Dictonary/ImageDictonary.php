@@ -1,6 +1,6 @@
 <?php
 
-namespace Jacksay\Dictonary;
+namespace Jacksay\PhpFileExtension\Dictonary;
 
 use Jacksay\PhpFileExtension\PhpFileExtension;
 

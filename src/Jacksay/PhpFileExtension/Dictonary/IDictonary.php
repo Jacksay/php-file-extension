@@ -5,7 +5,7 @@
  * @copyright Certic (c) 2015
  */
 
-namespace Jacksay\Dictonary;
+namespace Jacksay\PhpFileExtension\Dictonary;
 
 use Jacksay\PhpFileExtension\PhpFileExtension;
 
