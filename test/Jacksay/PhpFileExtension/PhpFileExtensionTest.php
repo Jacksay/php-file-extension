@@ -1,7 +1,9 @@
 <?php
 
 namespace Jacksay\PhpFileExtension;
-use Jacksay\Dictonary\DocumentDictionary;
+use Jacksay\PhpFileExtension\Dictonary\DocumentDictionary;
+use Jacksay\PhpFileExtension\Dictonary\ImageDictonary;
+
 
 /**
  * Created by PhpStorm.
@@ -16,8 +18,9 @@ class PhpFileExtensionTest extends \PHPUnit_Framework_TestCase
         $ext = new PhpFileExtension();
 
         // Image
-        $loader = new DocumentDictionary();
-        $loader->loadExtensions($ext);
+        (new DocumentDictionary())->loadExtensions($ext);
+        (new ImageDictonary())->loadExtensions($ext);
+
 
         $this->assertEquals($ext->getExtension('image/jpg'), 'jpg');
         $this->assertEquals($ext->getExtension('image/jpeg'), 'jpg');
