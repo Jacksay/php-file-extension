@@ -1,0 +1,14 @@
+application/zip; charset=binary
+application/pdf; charset=binary
+application/vnd.oasis.opendocument.text; charset=binary
+application/msword; charset=binary
+application/vnd.ms-excel; charset=binary
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; charset=binary
+application/vnd.ms-office; charset=binary
+text/rtf; charset=us-ascii
+text/plain; charset=iso-8859-1
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; charset=binary
+message/rfc822; charset=us-ascii
+image/tiff; charset=binary
+image/jpeg; charset=binary
+application/pdf; charset=iso-8859-1
