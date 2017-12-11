@@ -1,7 +1,7 @@
 {
     "name": "jacksay/php-file-extension",
     "description": "Utils for check and get file extension",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "license": "MIT",
     "authors": [
         {
