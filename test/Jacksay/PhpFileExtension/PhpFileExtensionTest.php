@@ -4,6 +4,7 @@ namespace Jacksay\PhpFileExtension;
 use Jacksay\PhpFileExtension\Dictonary\DocumentDictionary;
 use Jacksay\PhpFileExtension\Dictonary\ImageDictonary;
 use Jacksay\PhpFileExtension\Dictonary\OfficeDocumentDictonary;
+use PHPUnit\Framework\TestCase;
 
 
 /**
@@ -12,7 +13,7 @@ use Jacksay\PhpFileExtension\Dictonary\OfficeDocumentDictonary;
  * Date: 04/12/2015
  * Time: 12:34
  */
-class PhpFileExtensionTest extends \PHPUnit_Framework_TestCase
+class PhpFileExtensionTest extends TestCase
 {
     public function testExtensionAdd()
     {

@@ -2,6 +2,8 @@
 
 namespace Jacksay\PhpFileExtension\Strategy;
 
+use PHPUnit\Framework\TestCase;
+
 require __DIR__.'/../../../../vendor/autoload.php';
 
 /**
@@ -10,7 +12,7 @@ require __DIR__.'/../../../../vendor/autoload.php';
  * Date: 04/12/2015
  * Time: 12:08
  */
-class MimeCleanerTest extends \PHPUnit_Framework_TestCase
+class MimeCleanerTest extends TestCase
 {
     public function testCleaner()
     {

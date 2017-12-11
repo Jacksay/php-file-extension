@@ -1,0 +1,10 @@
+<phpunit bootstrap="Bootstrap.php">
+  <testsuites>
+    <testsuite name="PhpFileExtension">
+      <directory>Jacksay\PhpFileExtension</directory>
+    </testsuite>
+    <testsuite name="Strategy">
+      <directory>Jacksay\PhpFileExtension\Strategy</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
